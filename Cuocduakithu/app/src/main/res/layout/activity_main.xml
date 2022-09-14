@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/dua"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Score:"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+    <TextView
+        android:id="@+id/txtScore2"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/txtScore"
+        android:textSize="35sp"
+        android:text="100"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtTile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="186dp"
+        android:text="Chọn 1 trong 3:  "
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cb3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="2dp" />
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cb2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="2dp" />
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="21dp" />
+
+    <SeekBar
+        android:id="@+id/see1"
+        android:progressDrawable="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_above="@+id/see2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toRightOf="@id/cb1"
+        android:thumb="@mipmap/ic_launcher" />
+
+    <SeekBar
+        android:id="@+id/see2"
+        android:progressDrawable="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_above="@+id/see3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toRightOf="@id/cb2"
+        android:thumb="@mipmap/ic_launcher" />
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:id="@+id/see3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="21dp"
+        android:layout_toRightOf="@id/cb3"
+        android:thumb="@mipmap/ic_launcher" />
+
+    <Button
+        android:layout_centerInParent="true"
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play game"
+        android:textAllCaps="false"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:text="Chơi tiếp"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
